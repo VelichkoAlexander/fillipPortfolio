@@ -1,0 +1,541 @@
+---
+// Standalone concept page — intentionally not linked from the main site.
+const title = "Qamar — Neobank for MENA · Concept";
+const bars = [
+  0.05, 0.12, 0.3, 0.55, 0.75, 0.9, 1, 0.95, 0.8, 0.6, 0.4, 0.22, 0.1, 0.05,
+];
+---
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300..700&family=Inter:wght@400;500;600;700&family=Amiri&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="page">
+      <!-- ============ INTRO ============ -->
+      <header class="intro">
+        <p class="kicker">Тестовое задание · Product Designer · Концепт</p>
+        <h1><span class="ar">قمر</span> Qamar — необанк для MENA</h1>
+        <p class="lead">
+          Qamar («луна») — банк для молодых профессионалов и экспатов стран
+          Залива. Характер продукта — <em>тихая роскошь</em>: тёмное полотно,
+          золотые нити и крупные серифные цифры вместо корпоративной тяжести
+          местных банков и холодного минимализма глобальных финтехов.
+          Без клише — куполов, орнаментов и верблюдов: культура считывается
+          через материальность (золото, ткань, каллиграфическую пластику цифр),
+          двуязычие и сами сценарии.
+        </p>
+      </header>
+
+      <!-- ============ PHONES ============ -->
+      <section class="phones">
+        <!-- ======== PHONE 1 · HOME ======== -->
+        <figure class="phone-block">
+          <div class="phone" id="phone-home">
+            <div class="screen">
+              <div class="hero">
+                <div class="threads" aria-hidden="true">
+                  {bars.map((o) => (
+                    <i style={`--o:${o}`}></i>
+                  ))}
+                </div>
+
+                <div class="statusbar"><span>9:41</span><span class="sb-icons">▂▄▆ ⏾ ▰</span></div>
+
+                <div class="appbar">
+                  <div class="who">
+                    <span class="avatar">C</span>
+                    <span class="greet">
+                      <span class="greet-ar ar">مساء الخير</span>
+                      <span class="greet-name">Camila</span>
+                    </span>
+                  </div>
+                  <button class="iconbtn bell" aria-label="Notifications">
+                    <svg viewBox="0 0 24 24"><path d="M18 16v-5a6 6 0 1 0-12 0v5l-2 2v1h16v-1l-2-2Z M10 21a2 2 0 0 0 4 0" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                    <i class="dot"></i>
+                  </button>
+                </div>
+
+                <div class="balance">
+                  <button class="bal-label" id="eye-toggle">
+                    Total balance
+                    <svg viewBox="0 0 24 24" class="eye"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12Z" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                  </button>
+                  <p class="bal-num" id="bal-num"><span class="dirham">Ð</span>10 659<span class="cents">,18</span></p>
+                  <div class="flow-chips">
+                    <span class="chip in">↑ +2 340</span>
+                    <span class="chip out">↓ −1 645</span>
+                  </div>
+                </div>
+
+                <div class="cards-row">
+                  <div class="card dark">
+                    <span class="card-net">VISA</span>
+                    <span class="card-moon">☾</span>
+                    <span class="card-num">•••• 8214</span>
+                  </div>
+                  <div class="card gold">
+                    <span class="card-net">VISA</span>
+                    <span class="card-num">•••• 1042</span>
+                  </div>
+                  <div class="card add">+</div>
+                </div>
+              </div>
+
+              <div class="sheet">
+                <div class="actionbar">
+                  <button class="pill primary" id="open-transfer">
+                    <span class="pill-ic"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    Transfer
+                  </button>
+                  <button class="pill">
+                    <span class="pill-ic"><svg viewBox="0 0 24 24"><path d="M17 7 7 17M15 17H7V9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    Request
+                  </button>
+                  <button class="pill grid" aria-label="All actions">
+                    <svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                  </button>
+                </div>
+
+                <div class="chips-scroll">
+                  <span class="qchip">🌍 Send home</span>
+                  <span class="qchip">🧾 Split bill</span>
+                  <span class="qchip">☪ Zakat</span>
+                  <span class="qchip">📄 Statement</span>
+                </div>
+
+                <div class="upcoming">
+                  <div class="up-row">
+                    <span class="up-ic bill">⚡</span>
+                    <span class="up-text"><b>DEWA · autopay</b><small>Due Oct 24</small></span>
+                    <span class="up-sum">−Ð64,00</span>
+                  </div>
+                  <div class="up-row">
+                    <span class="up-ic salary">💼</span>
+                    <span class="up-text"><b>Salary expected</b><small>Oct 28 · Emaar LLC</small></span>
+                    <span class="up-sum plus">+Ð12 500</span>
+                  </div>
+                </div>
+
+                <div class="tx-head"><b>Recent transactions</b><a>See all</a></div>
+                <ul class="tx">
+                  <li><span class="tx-ic" style="--c:#1c6e4a">Ca</span><span class="tx-text"><b>Careem</b><small>Today · 20:25 · Ride</small></span><span class="tx-sum">−Ð34,50</span></li>
+                  <li><span class="tx-ic" style="--c:#e0592a">Ta</span><span class="tx-text"><b>Talabat</b><small>Today · 13:02 · Food</small></span><span class="tx-sum">−Ð86,20</span></li>
+                  <li><span class="tx-ic" style="--c:#b28a2e">Em</span><span class="tx-text"><b>Emaar LLC</b><small>Sep 28 · Salary</small></span><span class="tx-sum plus">+Ð12 500</span></li>
+                  <li><span class="tx-ic" style="--c:#2b2b2b">No</span><span class="tx-text"><b>Noon</b><small>Sep 26 · Shopping</small></span><span class="tx-sum">−Ð219,00</span></li>
+                </ul>
+
+                <nav class="tabbar">
+                  <span class="tab active"><svg viewBox="0 0 24 24"><path d="m4 11 8-7 8 7v9h-5v-6h-6v6H4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>Home</span>
+                  <span class="tab"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 10h18" stroke="currentColor" stroke-width="1.7"/></svg>Cards</span>
+                  <span class="tab"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M17 15V7H9" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>Pay</span>
+                  <span class="tab"><svg viewBox="0 0 24 24"><path d="M4 19V10M10 19V5M16 19v-7M21 19H3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>Insights</span>
+                </nav>
+              </div>
+
+              <!-- transfer sheet overlay -->
+              <div class="overlay" id="overlay">
+                <div class="ov-sheet">
+                  <span class="grab"></span>
+                  <b class="ov-title">Transfer</b>
+                  <div class="ov-opts">
+                    <span class="ov-opt"><i>🌍</i>Send home<small>FX, instant</small></span>
+                    <span class="ov-opt"><i>🏦</i>To bank<small>IBAN / local</small></span>
+                    <span class="ov-opt"><i>👥</i>To contact<small>By phone</small></span>
+                  </div>
+                  <button class="ov-close" id="close-transfer">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <figcaption>
+            Главный экран. Попробуйте: глазок скрывает баланс,
+            <b>Transfer</b> открывает шит.
+          </figcaption>
+        </figure>
+
+        <!-- ======== PHONE 2 · SEND HOME ======== -->
+        <figure class="phone-block">
+          <div class="phone">
+            <div class="screen sendhome">
+              <div class="statusbar dark-sb"><span>9:41</span><span class="sb-icons">▂▄▆ ⏾ ▰</span></div>
+              <div class="sh-head">
+                <span class="sh-back">‹</span>
+                <span class="sh-title">Send home <span class="ar sh-ar">تحويل للأهل</span></span>
+              </div>
+
+              <p class="sh-label">To</p>
+              <div class="sh-people">
+                <span class="person active"><i class="p-av" style="--c:#8a5a2b">M</i>Mama</span>
+                <span class="person"><i class="p-av" style="--c:#3c5a8a">A</i>Ahmed</span>
+                <span class="person"><i class="p-av" style="--c:#5a3c8a">L</i>Layla</span>
+                <span class="person"><i class="p-av new">+</i>New</span>
+              </div>
+
+              <div class="sh-amount">
+                <p class="sh-label">You send</p>
+                <p class="sh-num"><span class="dirham">Ð</span>1 000<span class="cents">,00</span></p>
+                <div class="sh-arrow">↓</div>
+                <p class="sh-label">Mama receives · Cairo 🇪🇬</p>
+                <p class="sh-num receive">£E 13 270</p>
+              </div>
+
+              <div class="sh-meta">
+                <span>1 Ð = 13,27 EGP</span>
+                <span class="sh-dotsep">·</span>
+                <span>No fees</span>
+                <span class="sh-dotsep">·</span>
+                <span class="sh-instant">⚡ Arrives in seconds</span>
+              </div>
+
+              <div class="keypad" aria-hidden="true">
+                {["1","2","3","4","5","6","7","8","9",",","0","⌫"].map((k) => (
+                  <span>{k}</span>
+                ))}
+              </div>
+
+              <button class="sh-cta">Review transfer</button>
+              <p class="sh-note">Rate locked for 30 min</p>
+            </div>
+          </div>
+          <figcaption>
+            Сценарий <b>Send home</b> — переводы семье. Половина жителей Залива —
+            экспаты; это действие №1, а не пункт в меню.
+          </figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ WRITEUP ============ -->
+      <section class="writeup">
+        <div class="col">
+          <h2>Логика главного экрана</h2>
+          <ol>
+            <li><b>Состояние.</b> Баланс — одно число крупной антиквой, ничего не конкурирует с ним за внимание. Приватность одним касанием (глазок): в культуре региона деньги не принято показывать — экран часто виден окружающим.</li>
+            <li><b>Действие.</b> Вместо витрины из 4+ сервисов — два реальных ежедневных действия (Transfer / Request) в pill-баре, остальное за гридом. Контекстные чипы под баром: Send home, Split bill, Zakat, Statement — меняются от паттернов пользователя.</li>
+            <li><b>Будущее.</b> Блок Upcoming: автосписания и ожидаемая зарплата. Снимает главную тревогу «хватит ли до конца месяца» до того, как она возникла.</li>
+            <li><b>Прошлое.</b> Лента транзакций с локальными мерчантами (Careem, Talabat, Noon) и категорией — самое частое, зачем открывают банк.</li>
+          </ol>
+        </div>
+        <div class="col">
+          <h2>Ключевые визуальные решения</h2>
+          <ul>
+            <li><b>Золотые нити.</b> Вертикальный градиент-«ткань» за балансом — отсылка к текстилю и золоту без орнаментальных клише; в проде — живая шейдер-анимация, реагирующая на приход денег.</li>
+            <li><b>Типографика как характер.</b> Серифная антиква (Fraunces) только для денег — цифры получают каллиграфическую пластику; весь UI — нейтральный гротеск.</li>
+            <li><b>Новый символ дирхама</b> в записи суммы — продукт живёт в валюте пользователя, а не поверх неё.</li>
+            <li><b>Двуязычие по умолчанию.</b> Арабское приветствие рядом с латиницей; вся сетка спроектирована зеркалируемой под RTL.</li>
+            <li><b>Halal-friendly словарь.</b> Zakat-калькулятор в быстрых действиях, «profit share» вместо «interest» — уважение к исламским финансам на уровне лексики, а не отдельного «исламского режима».</li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>Fillip Nekhaev · Концепт для тестового задания · Страница скрыта из навигации и поиска</p>
+      </footer>
+    </main>
+
+    <style>
+      :root {
+        --gold: #d9a441;
+        --gold-soft: #b28a2e;
+        --ink: #14120e;
+        --paper: #0f0e0c;
+        --ivory: #f4efe6;
+        --muted: #9b948a;
+        --green: #3f9e6e;
+      }
+      * { margin: 0; box-sizing: border-box; }
+      body {
+        background: var(--paper);
+        color: var(--ivory);
+        font-family: "Inter", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .ar { font-family: "Amiri", serif; }
+      .page { max-width: 1080px; margin: 0 auto; padding: 64px 24px 40px; }
+
+      /* intro */
+      .kicker { color: var(--gold); font-size: 12px; letter-spacing: 0.14em; text-transform: uppercase; font-weight: 600; }
+      .intro h1 { font-family: "Fraunces", serif; font-weight: 400; font-size: clamp(34px, 5vw, 56px); margin: 14px 0 18px; }
+      .intro h1 .ar { color: var(--gold); margin-right: 6px; }
+      .lead { max-width: 720px; line-height: 1.65; color: #cfc8bc; font-size: 16px; }
+      .lead em { color: var(--gold); font-style: normal; }
+
+      /* phones layout */
+      .phones { display: flex; flex-wrap: wrap; gap: 48px; justify-content: center; margin: 72px 0; }
+      .phone-block { max-width: 393px; }
+      figcaption { margin-top: 18px; font-size: 13px; line-height: 1.6; color: var(--muted); text-align: center; padding: 0 12px; }
+      figcaption b { color: var(--ivory); }
+
+      .phone {
+        width: 393px; max-width: 100%;
+        border-radius: 54px;
+        padding: 10px;
+        background: #1c1a16;
+        box-shadow: 0 30px 80px rgba(0,0,0,0.6), inset 0 0 0 1px #3a362e;
+      }
+      .screen {
+        position: relative;
+        border-radius: 44px;
+        overflow: hidden;
+        background: #fdfcf9;
+        height: 832px;
+        display: flex; flex-direction: column;
+      }
+
+      /* hero (dark header) */
+      .hero { position: relative; background: #0a0908; padding-bottom: 26px; }
+      .threads { position: absolute; inset: 0; display: flex; overflow: hidden; }
+      .threads i {
+        flex: 1;
+        background: linear-gradient(180deg, transparent 6%, rgba(217,164,65, calc(var(--o) * 0.85)) 78%, rgba(240,200,110, var(--o)) 100%);
+        border-right: 1px solid rgba(0,0,0,0.35);
+      }
+      .hero > *:not(.threads) { position: relative; }
+
+      .statusbar { display: flex; justify-content: space-between; padding: 16px 28px 4px; font-size: 14px; font-weight: 600; color: #fff; }
+      .sb-icons { letter-spacing: 2px; font-size: 11px; opacity: 0.9; }
+      .dark-sb { color: var(--ivory); }
+
+      .appbar { display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+      .who { display: flex; align-items: center; gap: 12px; }
+      .avatar {
+        width: 42px; height: 42px; border-radius: 50%;
+        display: grid; place-items: center;
+        background: #241f16; color: var(--gold);
+        font-family: "Fraunces", serif; font-size: 18px;
+        box-shadow: inset 0 0 0 1.5px rgba(217,164,65,0.6);
+      }
+      .greet { display: flex; flex-direction: column; line-height: 1.15; }
+      .greet-ar { color: var(--gold); font-size: 13px; }
+      .greet-name { color: #fff; font-weight: 600; font-size: 16px; }
+      .iconbtn {
+        position: relative; width: 42px; height: 42px; border-radius: 50%;
+        border: none; background: rgba(255,255,255,0.07); color: #f0e9db;
+        display: grid; place-items: center; cursor: pointer;
+      }
+      .iconbtn svg { width: 21px; height: 21px; }
+      .dot { position: absolute; top: 9px; right: 10px; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); }
+
+      .balance { text-align: center; padding: 26px 0 10px; }
+      .bal-label {
+        border: none; background: none; cursor: pointer;
+        color: rgba(255,255,255,0.55); font-size: 12px; letter-spacing: 0.1em;
+        text-transform: uppercase; font-weight: 500; font-family: inherit;
+        display: inline-flex; align-items: center; gap: 6px;
+      }
+      .eye { width: 15px; height: 15px; }
+      .bal-num {
+        font-family: "Fraunces", serif; font-weight: 400;
+        font-size: 56px; color: #fff; margin-top: 6px;
+        transition: filter 0.25s;
+      }
+      .bal-num.hidden-bal { filter: blur(14px); }
+      .dirham { font-size: 0.55em; vertical-align: 14px; margin-right: 6px; color: rgba(255,255,255,0.85); }
+      .cents { font-size: 0.55em; color: rgba(255,255,255,0.75); }
+      .flow-chips { display: flex; gap: 8px; justify-content: center; margin-top: 10px; }
+      .chip { font-size: 12px; font-weight: 600; padding: 5px 12px; border-radius: 999px; backdrop-filter: blur(4px); }
+      .chip.in { color: #8fe0b4; background: rgba(63,158,110,0.22); }
+      .chip.out { color: #f0cf9a; background: rgba(217,164,65,0.18); }
+
+      .cards-row { display: flex; gap: 10px; padding: 22px 0 0 20px; overflow: hidden; }
+      .card {
+        min-width: 168px; height: 92px; border-radius: 16px; padding: 12px 14px;
+        display: flex; flex-direction: column; justify-content: space-between; position: relative;
+      }
+      .card.dark { background: linear-gradient(135deg, #23201a, #0d0c0a); box-shadow: inset 0 0 0 1px rgba(217,164,65,0.35); color: #e8e0d0; }
+      .card.gold { background: linear-gradient(135deg, #e3b95c, #a97f22); color: #241d0e; }
+      .card-net { align-self: flex-end; font-size: 11px; font-weight: 700; font-style: italic; letter-spacing: 0.04em; }
+      .card-moon { position: absolute; top: 8px; left: 12px; color: var(--gold); font-size: 16px; }
+      .card-num { font-size: 13px; font-weight: 600; letter-spacing: 0.06em; }
+      .card.add {
+        min-width: 48px; height: 92px; border-radius: 16px;
+        display: grid; place-items: center;
+        background: rgba(255,255,255,0.07); color: #cfc8bc; font-size: 20px;
+      }
+
+      /* light sheet */
+      .sheet {
+        flex: 1; background: #fdfcf9; color: var(--ink);
+        border-radius: 26px 26px 0 0; margin-top: -22px; position: relative;
+        padding: 18px 20px 0; display: flex; flex-direction: column;
+      }
+      .actionbar { display: flex; gap: 8px; }
+      .pill {
+        flex: 1; display: flex; align-items: center; gap: 9px;
+        border: none; cursor: pointer; font-family: inherit;
+        background: #f1ece1; color: var(--ink);
+        border-radius: 999px; padding: 8px 14px 8px 8px;
+        font-size: 14px; font-weight: 600;
+      }
+      .pill.primary { background: var(--ink); color: #f4efe6; }
+      .pill.primary .pill-ic { background: var(--gold); color: var(--ink); }
+      .pill-ic {
+        width: 34px; height: 34px; border-radius: 50%; flex: none;
+        display: grid; place-items: center; background: var(--ink); color: #f4efe6;
+      }
+      .pill-ic svg { width: 16px; height: 16px; }
+      .pill.grid { flex: none; width: 50px; justify-content: center; padding: 8px; background: var(--gold); color: var(--ink); }
+      .pill.grid svg { width: 20px; height: 20px; }
+
+      .chips-scroll { display: flex; gap: 8px; margin-top: 12px; overflow: hidden; }
+      .qchip {
+        flex: none; font-size: 12px; font-weight: 500; color: #5e574b;
+        border: 1px solid #e5decf; border-radius: 999px; padding: 7px 12px; background: #faf8f2;
+      }
+
+      .upcoming { margin-top: 16px; border: 1px solid #eee7d8; border-radius: 16px; background: #fbf9f3; }
+      .up-row { display: flex; align-items: center; gap: 12px; padding: 11px 14px; }
+      .up-row + .up-row { border-top: 1px solid #f0e9da; }
+      .up-ic { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; font-size: 15px; }
+      .up-ic.bill { background: #f6ead0; }
+      .up-ic.salary { background: #e3f0e8; }
+      .up-text { flex: 1; display: flex; flex-direction: column; line-height: 1.3; }
+      .up-text b { font-size: 13.5px; }
+      .up-text small { color: #9a9284; font-size: 11.5px; }
+      .up-sum { font-size: 13.5px; font-weight: 600; }
+      .plus { color: var(--green); }
+
+      .tx-head { display: flex; justify-content: space-between; align-items: baseline; margin: 20px 2px 4px; }
+      .tx-head b { font-size: 16px; }
+      .tx-head a { font-size: 12.5px; color: var(--gold-soft); font-weight: 600; }
+      .tx { list-style: none; padding: 0; }
+      .tx li { display: flex; align-items: center; gap: 12px; padding: 11px 2px; border-bottom: 1px solid #f2ecdf; }
+      .tx li:last-child { border-bottom: none; }
+      .tx-ic {
+        width: 40px; height: 40px; border-radius: 50%; flex: none;
+        display: grid; place-items: center; font-size: 13px; font-weight: 700;
+        color: #fff; background: var(--c);
+      }
+      .tx-text { flex: 1; display: flex; flex-direction: column; line-height: 1.35; }
+      .tx-text b { font-size: 14px; }
+      .tx-text small { color: #9a9284; font-size: 12px; }
+      .tx-sum { font-size: 14px; font-weight: 600; }
+
+      .tabbar {
+        margin-top: auto; display: flex; justify-content: space-around;
+        padding: 10px 8px 22px; border-top: 1px solid #f0e9da; background: #fdfcf9;
+      }
+      .tab { display: flex; flex-direction: column; align-items: center; gap: 3px; font-size: 10.5px; color: #a49b8b; font-weight: 500; }
+      .tab svg { width: 22px; height: 22px; }
+      .tab.active { color: var(--ink); }
+      .tab.active svg { color: var(--gold-soft); }
+
+      /* overlay transfer sheet */
+      .overlay {
+        position: absolute; inset: 0; background: rgba(10,9,8,0.55);
+        display: flex; align-items: flex-end;
+        opacity: 0; pointer-events: none; transition: opacity 0.25s;
+      }
+      .overlay.open { opacity: 1; pointer-events: auto; }
+      .ov-sheet {
+        width: 100%; background: #fdfcf9; border-radius: 26px 26px 0 0;
+        padding: 10px 20px 28px; transform: translateY(30px); transition: transform 0.25s;
+        display: flex; flex-direction: column; gap: 14px; color: var(--ink);
+      }
+      .overlay.open .ov-sheet { transform: none; }
+      .grab { width: 40px; height: 4px; border-radius: 2px; background: #ddd5c4; align-self: center; }
+      .ov-title { font-size: 18px; }
+      .ov-opts { display: flex; flex-direction: column; gap: 8px; }
+      .ov-opt {
+        display: flex; align-items: center; gap: 12px; padding: 12px 14px;
+        border: 1px solid #eee7d8; border-radius: 14px; font-weight: 600; font-size: 14px;
+      }
+      .ov-opt i { font-style: normal; width: 36px; height: 36px; border-radius: 10px; background: #f6f1e5; display: grid; place-items: center; }
+      .ov-opt small { margin-left: auto; color: #9a9284; font-weight: 400; }
+      .ov-close {
+        border: none; background: var(--ink); color: #f4efe6; font-family: inherit;
+        font-weight: 600; font-size: 14px; border-radius: 999px; padding: 13px; cursor: pointer;
+      }
+
+      /* phone 2 — send home */
+      .screen.sendhome { background: #0d0c0a; color: var(--ivory); padding: 0 24px 30px; display: flex; flex-direction: column; }
+      .keypad {
+        margin-top: auto; display: grid; grid-template-columns: repeat(3, 1fr);
+        gap: 4px 18px; padding: 10px 8px 6px;
+      }
+      .keypad span {
+        text-align: center; padding: 9px 0; font-size: 20px; font-weight: 500;
+        color: #d9d2c5; border-radius: 12px;
+      }
+      .keypad span:nth-child(1) { background: rgba(255,255,255,0.05); }
+      .screen.sendhome .statusbar { padding-left: 4px; padding-right: 4px; }
+      .sh-head { display: flex; align-items: center; gap: 12px; padding: 14px 0 8px; }
+      .sh-back { font-size: 26px; color: var(--muted); }
+      .sh-title { font-size: 20px; font-weight: 600; }
+      .sh-ar { color: var(--gold); font-size: 15px; margin-left: 8px; }
+      .sh-label { color: var(--muted); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; margin: 18px 0 10px; }
+      .sh-people { display: flex; gap: 14px; }
+      .person { display: flex; flex-direction: column; align-items: center; gap: 6px; font-size: 12px; color: var(--muted); }
+      .person.active { color: var(--ivory); }
+      .p-av {
+        width: 52px; height: 52px; border-radius: 50%; font-style: normal;
+        display: grid; place-items: center; font-weight: 700; font-size: 17px;
+        background: var(--c); color: #fff;
+      }
+      .person.active .p-av { box-shadow: 0 0 0 2px #0d0c0a, 0 0 0 4px var(--gold); }
+      .p-av.new { background: #221f1a; color: var(--gold); font-size: 20px; }
+      .sh-amount { text-align: center; margin-top: 26px; }
+      .sh-num { font-family: "Fraunces", serif; font-size: 46px; }
+      .sh-num.receive { color: var(--gold); font-size: 36px; }
+      .sh-arrow { color: var(--muted); margin: 8px 0 2px; font-size: 18px; }
+      .sh-meta {
+        display: flex; justify-content: center; flex-wrap: wrap; gap: 6px;
+        color: var(--muted); font-size: 12.5px; margin-top: 22px;
+      }
+      .sh-instant { color: #8fe0b4; }
+      .sh-dotsep { opacity: 0.5; }
+      .sh-cta {
+        display: block; width: 100%; margin-top: 14px;
+        border: none; cursor: pointer; font-family: inherit;
+        background: linear-gradient(135deg, #e3b95c, #b8892e); color: #241d0e;
+        font-size: 15px; font-weight: 700; border-radius: 999px; padding: 16px;
+      }
+      .sh-note { text-align: center; color: var(--muted); font-size: 12px; margin-top: 12px; }
+
+      /* writeup */
+      .writeup { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; margin: 40px 0 64px; }
+      .writeup h2 { font-family: "Fraunces", serif; font-weight: 400; font-size: 26px; margin-bottom: 18px; color: var(--ivory); }
+      .writeup ol, .writeup ul { padding-left: 18px; display: flex; flex-direction: column; gap: 12px; }
+      .writeup li { line-height: 1.6; color: #cfc8bc; font-size: 14.5px; }
+      .writeup li b { color: var(--ivory); }
+      .writeup li::marker { color: var(--gold); }
+
+      .foot { border-top: 1px solid #26231d; padding-top: 24px; color: #6f695f; font-size: 12.5px; }
+
+      @media (max-width: 860px) {
+        .writeup { grid-template-columns: 1fr; gap: 36px; }
+        .page { padding-top: 44px; }
+      }
+      @media (max-width: 430px) {
+        .phone { width: 100%; border-radius: 44px; }
+        .screen { height: auto; min-height: 780px; }
+      }
+    </style>
+
+    <script>
+      const bal = document.getElementById("bal-num");
+      document.getElementById("eye-toggle")?.addEventListener("click", () => {
+        bal?.classList.toggle("hidden-bal");
+      });
+      const overlay = document.getElementById("overlay");
+      document.getElementById("open-transfer")?.addEventListener("click", () => {
+        overlay?.classList.add("open");
+      });
+      document.getElementById("close-transfer")?.addEventListener("click", () => {
+        overlay?.classList.remove("open");
+      });
+      overlay?.addEventListener("click", (e) => {
+        if (e.target === overlay) overlay.classList.remove("open");
+      });
+    </script>
+  </body>
+</html>
